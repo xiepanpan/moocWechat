@@ -30,7 +30,7 @@ public class UserController {
      * @return
      * @throws Exception
      */
-    @PostMapping("/registerOrLogin")
+    @PostMapping("/registOrLogin")
     public IMoocJSONResult registerOrLogin(@RequestBody Users users) throws Exception {
 
         if (StringUtils.isBlank(users.getUsername())||StringUtils.isBlank(users.getPassword())) {
